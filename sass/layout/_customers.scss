@@ -1,0 +1,26 @@
+/* Постійні клієнти */
+
+.customers-title {
+  margin-bottom: 50px;
+}
+.customers-list {
+  display: flex;
+  gap: 30px;
+}
+
+.customers__link {
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: #afb1b8;
+  transition: fill var(--transition-hover), border var(--transition-hover);
+  &:hover,
+  &:focus {
+  fill: #2196f3;
+  border: 1px solid #2196f3;
+}
+}

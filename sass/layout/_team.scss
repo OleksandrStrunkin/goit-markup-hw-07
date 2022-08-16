@@ -1,0 +1,65 @@
+.team {
+  background-color: #f5f4fa;
+}
+.team-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.team-list > li {
+  max-width: 270px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  background-color: #ffffff;
+}
+.team-titleh {
+  margin-bottom: 50px;
+}
+.team-signature {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.team-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  letter-spacing: 0.03em;
+  color: var(--second-title-color);
+  margin-bottom: 10px;
+  padding: 0;
+  text-align: center;
+}
+.team-text {
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+  margin: 0 0 16px 0;
+  padding: 0;
+  text-align: center;
+}
+.team-items {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 0;
+}
+.team-icon-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: #afb1b8;
+  transition: background-color var(--transition-hover),
+    fill var(--transition-hover);
+}
+.team-icon-link:hover,
+.team-icon-link:focus {
+  background-color: #2196f3;
+  fill: #ffffff;
+}

@@ -1,0 +1,100 @@
+.page-footer {
+  padding: 60px 0;
+  background-color: #2f303a;
+}
+.page-footer__logo {
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+.contacts-footer > li:not(:last-child) {
+  display: block;
+  margin-bottom: 9px;
+}
+.contacts-adress {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: var(--first-title-color);
+}
+.contacts-footer {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: var(--contacts-footer-color);
+}
+.footer-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+.content-footer {
+  display: flex;
+  align-items: baseline;
+}
+.footer-social-network {
+  margin-left: 70px;
+}
+.footer-soc {
+  display: flex;
+  gap: 10px;
+}
+.footer-soc__link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: #ffffff;
+  transition: background-color var(--transition-hover),
+    fill var(--transition-hover);
+}
+.footer-soc__link:hover,
+.footer-soc__link:focus {
+  background-color: #2196f3;
+  fill: #ffffff;
+}
+.footer-form {
+  margin-left: auto;
+}
+.form-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--color-btn-menu);
+  margin-bottom: 20px;
+}
+.footer-field {
+  display: flex;
+  flex-direction: row;
+}
+.footer-field__icon {
+  margin-left: 10px;
+}
+.footer-field__input {
+  width: 358px;
+  height: 50px;
+  margin-right: 12px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  padding-left: 15px;
+  color: rgba(255, 255, 255, 0.6);
+  outline: transparent;
+  cursor: pointer;
+  transition: color var(--transition-hover),
+    border-color var(--transition-hover);
+}
+.footer-field__input:focus {
+  border-color: var(--accent-color);
+  color: rgba(255, 255, 255, 0.6);
+}
