@@ -1,16 +1,16 @@
 @import "./utils/vars";
 @import "./base/reset";
-@import "./components/container";
+@import "./base/container";
 @import "./base/comon";
 
-@import "./layout/header";
-@import "./layout/hero";
-@import "./layout/benefits";
-@import "./layout/examples";
-@import "./layout/team";
-@import "./layout/customers";
-@import "./layout/footer";
+@import "./components/header";
+@import "./components/hero";
+@import "./components/benefits";
+@import "./components/examples";
+@import "./components/team";
+@import "./components/customers";
+@import "./components/footer";
 
-@import "./layout/portfolio";
+@import "./components/portfolio";
 
-@import "./layout/modal";
+@import "./components/modal";

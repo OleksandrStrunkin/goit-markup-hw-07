@@ -1,5 +1,8 @@
 .page-header {
   border-bottom: 1px solid #ececec;
+  &__logo {
+  margin-right: 93px;
+}
 }
 .logo {
   display: block;
@@ -8,9 +11,6 @@
   line-height: calc(31 / 26);
   letter-spacing: 0.03em;
   color: var(--second-logo-color);
-}
-.page-header__logo {
-  margin-right: 93px;
 }
 .logo__decoration {
   color: var(--logo-color);
@@ -23,15 +23,24 @@
   letter-spacing: 0.02em;
   color: var(--second-title-color);
   transition: color var(--transition-hover);
+  &:hover,
+  &:focus {
+  color: var(--accent-color);
 }
-.link.current {
+}
+.current {
   color: var(--accent-color);
   position: relative;
+  &::after {
+  position: absolute;
+  bottom: -1px;
+  display: block;
+  content: "";
+  background-color: var(--accent-color);
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
 }
-
-.link:hover,
-.link:focus {
-  color: var(--accent-color);
 }
 
 .content-header {
@@ -45,17 +54,7 @@
   gap: 50px;
   padding: 32px 0;
 }
-.current::after {
-  position: absolute;
-  bottom: -1px;
-  display: block;
-  content: "";
-  background-color: var(--accent-color);
-  width: 100%;
-  height: 4px;
-  border-radius: 2px;
-}
-.nav-list > li > a {
+.nav__link{
   padding: 32px 0;
 }
 .contacts-header {
@@ -72,12 +71,15 @@
   background-color: #ffffff;
   color: var(--text-color);
   transition: fill var(--transition-hover), color var(--transition-hover);
-}
-.contacts-header__link:hover .phone-icon,
-.contacts-header__link:focus .phone-icon {
+  &:hover .phone-icon,
+  &:focus .phone-icon {
   fill: var(--accent-color);
 }
-
+&:hover .mail-icon,
+&:focus .mail-icon {
+  fill: var(--accent-color);
+}
+}
 .mail-icon,
 .phone-icon {
   margin-right: 10px;

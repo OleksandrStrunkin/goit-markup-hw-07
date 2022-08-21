@@ -1,12 +1,10 @@
-.portfolio {
-}
+
 .list-btn {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
   margin-bottom: 50px;
-  /* outline: solid orange; */
 }
 .portfolio-btn {
   background-color: var(--color-btn-menu);
@@ -22,43 +20,43 @@
   border-radius: 4px;
   transition: color var(--transition-hover),
     background-color var(--transition-hover), box-shadow var(--transition-hover);
-}
-.portfolio-btn:hover,
-.portfolio-btn:focus {
+    &:hover,
+    &:focus {
   color: var(--color-btn-menu);
   background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-.portfolio-title {
-  font-size: 18px;
-  line-height: calc(36 / 18);
-  letter-spacing: 0.06em;
-  color: var(--second-title-color);
-  margin: 0 0 4px 0;
 }
-.portfolio-text {
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  &-discription {
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  padding: 20px 24px 20px 24px;
+  &__text {
   font-weight: 400;
   font-size: 16px;
   line-height: calc(30 / 16);
   letter-spacing: 0.03em;
   color: var(--text-color);
 }
-.portfolio-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
+  &__title {
+  font-size: 18px;
+  line-height: calc(36 / 18);
+  letter-spacing: 0.06em;
+  color: var(--second-title-color);
+  margin: 0 0 4px 0;
 }
-.discription {
-  border-bottom: 1px solid #eeeeee;
-  border-left: 1px solid #eeeeee;
-  border-right: 1px solid #eeeeee;
-  padding: 20px 24px 20px 24px;
 }
-.portfilio-discription {
+}
+.prodject {
   position: relative;
   overflow: hidden;
 }
-.img-discription {
+.prodject__overlay {
   display: block;
   position: absolute;
   top: 0.5%;
@@ -74,16 +72,16 @@
   transform: translateY(100%);
   overflow: auto;
   transition: transform var(--transition-hover);
-}
-.portfolio-link:hover .img-discription,
-.portfolio-link:focus .img-discription {
+  .portfolio__link:hover &,
+.portfolio__link:focus & {
   transform: translateY(0);
 }
-.portfolio-link {
+}
+.portfolio__link {
   display: block;
   transition: box-shadow var(--transition-hover);
-}
-.portfolio-list .portfolio-link:hover,
-.portfolio-list .portfolio-link:focus {
+  .portfolio &:hover,
+.portfolio &:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
 }

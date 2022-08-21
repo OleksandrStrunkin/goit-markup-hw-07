@@ -1,27 +1,25 @@
 .team {
   background-color: #f5f4fa;
+  &-title {
+  margin-bottom: 50px;
 }
-.team-list {
+&-list {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 30px;
-}
-.team-list > li {
+  &__item {
   max-width: 270px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background-color: #ffffff;
 }
-.team-titleh {
-  margin-bottom: 50px;
 }
-.team-signature {
+&-discription {
   padding-top: 30px;
   padding-bottom: 30px;
-}
-.team-title {
+  &__title {
   font-weight: 500;
   font-size: 16px;
   line-height: calc(19 / 16);
@@ -31,7 +29,7 @@
   padding: 0;
   text-align: center;
 }
-.team-text {
+&__text {
   font-size: 16px;
   line-height: calc(19 / 16);
   letter-spacing: 0.03em;
@@ -40,13 +38,14 @@
   padding: 0;
   text-align: center;
 }
-.team-items {
+}
+}
+.soc-list {
   display: flex;
   justify-content: center;
   gap: 10px;
   padding: 0;
-}
-.team-icon-link {
+  &__link {
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -57,9 +56,10 @@
   fill: #afb1b8;
   transition: background-color var(--transition-hover),
     fill var(--transition-hover);
-}
-.team-icon-link:hover,
-.team-icon-link:focus {
+    &:hover,
+    &:focus {
   background-color: #2196f3;
   fill: #ffffff;
+}
+}
 }
